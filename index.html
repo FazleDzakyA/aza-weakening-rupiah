@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rupiah & Reformasi: Jejak Fluktuasi Mata Uang Garuda | Azalia Fitriani</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Eksplorasi interaktif sejarah fluktuasi dan pelemahan Rupiah (IDR) terhadap Dolar AS (USD) sejak awal Era Reformasi 1998 hingga rekor terkini di tahun 2026. Dikurasi oleh Azalia Fitriani.">
+    <meta name="keywords" content="Rupiah, Pelemahan Rupiah, Reformasi, Ekonomi Indonesia, Kurs USD IDR, Sejarah Rupiah, Azalia Fitriani, Kurs Rupiah 2026">
+    <meta name="author" content="Azalia Fitriani">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Rupiah & Reformasi: Jejak Fluktuasi Mata Uang Garuda">
+    <meta property="og:description" content="Analisis komprehensif, data historis interaktif, dan laporan terbaru pelemahan Rupiah terhadap USD di era Reformasi hingga 2026.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Ambient Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon"><i class="fa-solid fa-chart-line-down"></i></span>
+                <span class="logo-text">Rupiah<span class="text-accent">Reformasi</span></span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#beranda" class="nav-link active">Beranda</a></li>
+                <li class="nav-item"><a href="#sejarah" class="nav-link">Sejarah Era</a></li>
+                <li class="nav-item"><a href="#grafik" class="nav-link">Data Interaktif</a></li>
+                <li class="nav-item"><a href="#faktor" class="nav-link">Faktor Analisis</a></li>
+                <li class="nav-item"><a href="#simulator" class="nav-link">Simulasi Kurs</a></li>
+                <li class="nav-item"><a href="#media" class="nav-link">Referensi Media</a></li>
+            </ul>
+            
+            <div class="nav-meta">
+                <span class="author-tag">By Azalia Fitriani</span>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Drawer Overlay -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="beranda">
+        <div class="container hero-container">
+            <div class="hero-content scroll-reveal">
+                <div class="badge-container">
+                    <span class="hero-badge"><i class="fa-solid fa-circle-nodes animate-pulse"></i> Analisis Spesial 2026</span>
+                </div>
+                <h1 class="hero-title">
+                    Jejak Fluktuasi <br>
+                    <span class="text-gradient">Mata Uang Garuda</span> <br>
+                    di Era Reformasi
+                </h1>
+                <p class="hero-description">
+                    Sebuah narasi ekonomi interaktif mengenai perjuangan, jatuh bangun, dan stabilitas nilai tukar Rupiah (IDR) terhadap Dolar AS (USD) sejak runtuhnya Orde Baru 1998 hingga dinamika rekor kurs terbaru tahun 2026.
+                </p>
+                <div class="hero-actions">
+                    <a href="#grafik" class="btn btn-primary btn-glow">Lihat Data Grafik <i class="fa-solid fa-arrow-trend-down"></i></a>
+                    <a href="#sejarah" class="btn btn-secondary">Pelajari Sejarah</a>
+                </div>
+            </div>
+            
+            <!-- Real-time Ticker & Summary Card -->
+            <div class="hero-ticker-wrapper scroll-reveal delay-1">
+                <div class="ticker-card glass-card">
+                    <div class="ticker-header">
+                        <span class="ticker-label">STATUS KURS TERBARU (MEI 2026)</span>
+                        <span class="status-indicator live animate-pulse"></span>
+                    </div>
+                    <div class="ticker-value-container">
+                        <span class="ticker-currency">USD / IDR</span>
+                        <h2 class="ticker-value text-red-glow">Rp17.706<span class="value-decimal">.00</span></h2>
+                    </div>
+                    <p class="ticker-change negative">
+                        <i class="fa-solid fa-caret-down"></i> Pelemahan -6.30% <span class="change-span">(Year-to-Date 2026)</span>
+                    </p>
+                    <div class="ticker-divider"></div>
+                    <div class="ticker-stats">
+                        <div class="stat-item">
+                            <span class="stat-lbl">Tertinggi 1998</span>
+                            <span class="stat-val">Rp16.600</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-lbl">Terkuat Habibie</span>
+                            <span class="stat-val">Rp6.500</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-lbl">Rekor Mei 2026</span>
+                            <span class="stat-val text-red">Rp17.706</span>
+                        </div>
+                    </div>
+                    <div class="ticker-footer">
+                        <span>Data Terkini & Validasi Media Utama</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Floating Indicators -->
+        <div class="scroll-indicator">
+            <span class="scroll-text">Gulir ke bawah</span>
+            <div class="mouse-icon">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historical Timeline Section -->
+    <section class="sejarah-section" id="sejarah">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-subtitle">KILAS BALIK EKONOMI</span>
+                <h2 class="section-title">Kronologi Rupiah & <span class="text-gradient">Lima Era Kepemimpinan</span></h2>
+                <p class="section-desc mx-auto">
+                    Bagaimana Rupiah bereaksi terhadap perubahan politik, krisis global, dan kebijakan fiskal dari masa ke masa di bawah lima kepemimpinan era Reformasi.
+                </p>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <!-- Era 1: BJ Habibie -->
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot dot-accent-1"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="timeline-date">1998 - 1999</div>
+                    <div class="timeline-content glass-card">
+                        <div class="era-header-wrapper">
+                            <span class="era-badge era-bjh">Era B.J. Habibie</span>
+                            <span class="era-kurs-label text-green"><i class="fa-solid fa-arrow-trend-up"></i> Rp16.600 ➜ Rp6.500</span>
+                        </div>
+                        <h3>Penyelamatan Moneter & Stabilisasi Ekstrim</h3>
+                        <p>
+                            Pasca-Krisis Moneter (Krismon) hebat 1997/1998 yang meruntuhkan rezim Orde Baru dan membawa Rupiah jatuh ke level Rp16.600 per USD, Presiden Habibie mengambil langkah berani. Melalui **independensi Bank Indonesia (UU No. 23/1999)** dan restrukturisasi perbankan nasional, Rupiah secara spektakuler menguat hingga menyentuh level **Rp6.500 per USD** pada pertengahan 1999. 
+                        </p>
+                        <div class="era-keypoints">
+                            <span class="kp-tag"><i class="fa-solid fa-check"></i> Independensi BI</span>
+                            <span class="kp-tag"><i class="fa-solid fa-check"></i> Penyehatan Perbankan</span>
+                            <span class="kp-tag"><i class="fa-solid fa-check"></i> Penguatan Tertinggi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Era 2: Gus Dur & Megawati -->
+                <div class="timeline-item scroll-reveal reverse">
+                    <div class="timeline-dot dot-accent-2"><i class="fa-solid fa-shuffle"></i></div>
+                    <div class="timeline-date">1999 - 2004</div>
+                    <div class="timeline-content glass-card">
+                        <div class="era-header-wrapper">
+                            <span class="era-badge era-gdm">Era Gus Dur & Megawati</span>
+                            <span class="era-kurs-label text-yellow"><i class="fa-solid fa-right-left"></i> Rp8.000 ➜ Rp10.000</span>
+                        </div>
+                        <h3>Konsolidasi Politik & Fluktuasi Transisi</h3>
+                        <p>
+                            Masa kepemimpinan K.H. Abdurrahman Wahid (Gus Dur) diwarnai gejolak politik dalam negeri yang menyebabkan Rupiah berfluktuasi cukup tajam. Memasuki era Megawati Soekarnoputri, stabilitas politik mulai pulih secara bertahap. Megawati berhasil mengakhiri program bantuan IMF pada tahun 2003 secara mandiri dan menjaga kurs Rupiah stabil di kisaran **Rp8.500 hingga Rp10.000 per USD**.
+                        </p>
+                        <div class="era-keypoints">
+                            <span class="kp-tag"><i class="fa-solid fa-check"></i> Keluar dari IMF</span>
+                            <span class="kp-tag"><i class="fa-solid fa-check"></i> Konsolidasi Utang</span>
+                            <span class="kp-tag"><i class="fa-solid fa-check"></i> Redam Gejolak</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Era 3: SBY -->
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot dot-accent-3"><i class="fa-solid fa-chart-line"></i></div>
+                    <div class="timeline-date">2004 - 2014</div>
+                    <div class="timeline-content glass-card">
+                        <div class="era-header-wrapper">
+                            <span class="era-badge era-sby">Era S.B. Yudhoyono</span>
+                            <span class="era-kurs-label text-green"><i class="fa-solid fa-circle-check"></i> Rp9.000 ➜ Rp12.000</span>
+                        </div>
+                        <h3>Boom Komoditas & Ketahanan Krisis Global 2008</h3>
+                        <p>
+                            Dekade kepemimpinan Susilo Bambang Yudhoyono ditandai dengan pertumbuhan ekonomi nasional yang konsisten di atas 5-6% serta adanya *Commodity Boom*. Meski dihantam badai hebat **Krisis Finansial Global 2008 (Subprime Mortgage)** yang sempat melontarkan Rupiah ke Rp12.000, koordinasi apik otoritas moneter membuat Rupiah cepat kembali stabil di kisaran **Rp9.000 per USD**. Pada akhir jabatannya (2013-2014), Rupiah mulai melemah akibat fenomena global *Taper Tantrum*.
+                        </p>
+                        <div class="era-keypoints">
+                            <span class="kp-tag"><i class="fa-solid fa-check"></i> Pertumbuhan >6%</span>
+                            <span class="kp-tag"><i class="fa-solid fa-check"></i> Penanganan Krisis 2008</span>
+                            <span class="kp-tag"><i class="fa-solid fa-check"></i> Investment Grade</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Era 4: Jokowi -->
+                <div class="timeline-item scroll-reveal reverse">
+                    <div class="timeline-dot dot-accent-4"><i class="fa-solid fa-arrows-spin"></i></div>
+                    <div class="timeline-date">2014 - 2024</div>
+                    <div class="timeline-content glass-card">
+                        <div class="era-header-wrapper">
+                            <span class="era-badge era-jokowi">Era Joko Widodo</span>
+                            <span class="era-kurs-label text-orange"><i class="fa-solid fa-triangle-exclamation"></i> Rp12.000 ➜ Rp16.200</span>
+                        </div>
+                        <h3>Dilema Pandemi, Perang Dagang, & Geopolitik</h3>
+                        <p>
+                            Dua periode pemerintahan Presiden Jokowi dihadapkan pada perubahan struktural ekonomi global yang dinamis. Rupiah menghadapi perang dagang AS-China, kenaikan suku bunga The Fed di tahun 2018 (kurs menembus Rp15.000), hingga hantaman **Pandemi Covid-19** di tahun 2020 yang memaksa Rupiah terperosok hingga **Rp16.500 per USD** sebelum akhirnya distabilkan kembali. Di akhir masa jabatannya pada tahun 2024, Rupiah kembali tertekan ke kisaran **Rp16.200-an per USD**.
+                        </p>
+                        <div class="era-keypoints">
+                            <span class="kp-tag"><i class="fa-solid fa-check"></i> Stabilisasi Pandemi</span>
+                            <span class="kp-tag"><i class="fa-solid fa-check"></i> Hilirisasi Tambang</span>
+                            <span class="kp-tag"><i class="fa-solid fa-check"></i> De-dolarisasi Lokal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Era 5: Prabowo Subianto -->
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot dot-accent-5"><i class="fa-solid fa-scale-unbalanced"></i></div>
+                    <div class="timeline-date">2024 - 2026+</div>
+                    <div class="timeline-content glass-card border-accent-glow">
+                        <div class="era-header-wrapper">
+                            <span class="era-badge era-prabowo">Era Prabowo Subianto</span>
+                            <span class="era-kurs-label text-red"><i class="fa-solid fa-arrow-trend-down"></i> Rp16.200 ➜ Rp17.706</span>
+                        </div>
+                        <h3>Tantangan Tekanan Global & Rekor Pelemahan Baru</h3>
+                        <p>
+                            Memasuki masa pemerintahan Presiden Prabowo Subianto, Rupiah menghadapi ujian eksternal yang luar biasa berat. Sepanjang tahun **2025** hingga puncaknya pada **Mei 2026**, ketegangan geopolitik di Timur Tengah, tingginya suku bunga acuan Amerika Serikat (*Higher for Longer*), sentimen fiskal domestik, serta keluarnya emiten Indonesia dari indeks pasar global MSCI memicu tekanan luar biasa besar. Rupiah menyentuh **Rp17.706 per USD**, mencatatkan **angka pelemahan terendah sepanjang sejarah reformasi**.
+                        </p>
+                        <div class="era-keypoints">
+                            <span class="kp-tag"><i class="fa-solid fa-check"></i> Rekor Rp17.706</span>
+                            <span class="kp-tag"><i class="fa-solid fa-check"></i> Target KEM-PPKF 2027</span>
+                            <span class="kp-tag"><i class="fa-solid fa-check"></i> Intervensi Ganda BI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Data Chart Section -->
+    <section class="grafik-section" id="grafik">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-subtitle">VISUALISASI DATA</span>
+                <h2 class="section-title">Evolusi Grafik <span class="text-gradient">USD vs IDR (1998 - 2026)</span></h2>
+                <p class="section-desc mx-auto">
+                    Visualisasi interaktif fluktuasi nilai tukar Rupiah. Arahkan kursor atau ketuk titik pada grafik untuk melihat detail nilai kurs serta konteks peristiwa ekonomi penting yang menyertainya.
+                </p>
+            </div>
+            
+            <div class="chart-container glass-card scroll-reveal">
+                <div class="chart-header">
+                    <div class="chart-title-group">
+                        <h3>Grafik Pergerakan Rupiah Terhadap 1 USD</h3>
+                        <p>Perbandingan kurs dari awal reformasi hingga Mei 2026</p>
+                    </div>
+                    <div class="chart-legend-custom">
+                        <span class="legend-dot dot-green"></span> Penguatan / Stabil
+                        <span class="legend-dot dot-red"></span> Pelemahan / Tekanan
+                    </div>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="rupiahChart"></canvas>
+                </div>
+                <div class="chart-note">
+                    <p><i class="fa-solid fa-circle-info"></i> *Catatan Data: Nilai tukar yang ditampilkan merepresentasikan rata-rata tahunan atau nilai puncak peristiwa besar untuk menggambarkan tren jangka panjang secara akurat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Economic Factor Analysis Section -->
+    <section class="faktor-section" id="faktor">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-subtitle">DIBALIK ANGKA</span>
+                <h2 class="section-title">Faktor Utama <span class="text-gradient">Penyebab Pelemahan</span></h2>
+                <p class="section-desc mx-auto">
+                    Mengapa nilai Rupiah mengalami tekanan hebat khususnya pada periode terbaru 2025-2026? Berikut adalah hasil analisis para ahli ekonomi.
+                </p>
+            </div>
+            
+            <div class="faktor-grid">
+                
+                <!-- Faktor Eksternal (Global) -->
+                <div class="faktor-card-container scroll-reveal">
+                    <div class="faktor-group-title"><i class="fa-solid fa-earth-americas"></i> Faktor Eksternal (Global)</div>
+                    
+                    <div class="faktor-card glass-card hover-glow">
+                        <div class="card-icon"><i class="fa-solid fa-building-columns"></i></div>
+                        <div class="card-body">
+                            <h4>Suku Bunga Tinggi The Fed (AS)</h4>
+                            <p>
+                                Kebijakan Bank Sentral Amerika Serikat (The Fed) untuk menahan suku bunga acuan di level tinggi demi memerangi inflasi domestik mengakibatkan arus modal asing mengalir keluar dari negara berkembang (*capital outflow*) kembali ke pasar aset aman di AS.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faktor-card glass-card hover-glow">
+                        <div class="card-icon"><i class="fa-solid fa-burst"></i></div>
+                        <div class="card-body">
+                            <h4>Konflik Geopolitik & Harga Energi</h4>
+                            <p>
+                                Peningkatan ketegangan geopolitik di Timur Tengah memicu kenaikan harga komoditas global, khususnya minyak mentah. Sebagai negara importir neto minyak, Indonesia membutuhkan lebih banyak pasokan Dolar AS untuk mendanai impor energi, yang menekan pasokan devisa.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faktor-card glass-card hover-glow">
+                        <div class="card-icon"><i class="fa-solid fa-coins"></i></div>
+                        <div class="card-body">
+                            <h4>Sentimen Dominasi Dolar (DXY)</h4>
+                            <p>
+                                Indeks Dolar AS (DXY) yang mengukur kekuatan Dolar terhadap sejumlah mata uang utama dunia menunjukkan performa super kuat (*super dollar*), menekan hampir seluruh mata uang regional Asia, termasuk Rupiah.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Faktor Internal (Domestik) -->
+                <div class="faktor-card-container scroll-reveal">
+                    <div class="faktor-group-title"><i class="fa-solid fa-house-chimney-crack"></i> Faktor Internal (Domestik)</div>
+                    
+                    <div class="faktor-card glass-card hover-glow">
+                        <div class="card-icon"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                        <div class="card-body">
+                            <h4>Musim Repatriasi Dividen Asing</h4>
+                            <p>
+                                Adanya pengiriman keuntungan investasi atau dividen oleh perusahaan-perusahaan multinasional di Indonesia kepada investor asing di luar negeri dalam bentuk Dolar AS meningkatkan permintaan mata uang asing secara drastis dalam jangka pendek.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faktor-card glass-card hover-glow">
+                        <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="card-body">
+                            <h4>Rebalancing Indeks Global (MSCI)</h4>
+                            <p>
+                                Dikeluarkannya beberapa saham unggulan Indonesia dari daftar *Global Standard Index* MSCI memaksa para pengelola dana investasi asing (*fund manager*) melakukan penyesuaian portofolio, yang berimbas pada aksi jual saham domestik dan melemahkan rupiah.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faktor-card glass-card hover-glow">
+                        <div class="card-icon"><i class="fa-solid fa-calculator"></i></div>
+                        <div class="card-body">
+                            <h4>Defisit Transaksi Berjalan & Kebutuhan Musiman</h4>
+                            <p>
+                                Meningkatnya kebutuhan valuta asing menjelang musim haji, pelunasan utang luar negeri swasta yang jatuh tempo, serta impor barang modal untuk proyek infrastruktur memberikan tekanan berkelanjutan pada cadangan devisa Bank Indonesia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Exchange Simulator Section -->
+    <section class="simulator-section" id="simulator">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-subtitle">INTERAKTIF & EDUKATIF</span>
+                <h2 class="section-title">Simulator & <span class="text-gradient">Kalkulator Dampak Kurs</span></h2>
+                <p class="section-desc mx-auto">
+                    Ketahui secara langsung bagaimana perbedaan nilai tukar di setiap era pemerintahan mempengaruhi daya beli kita terhadap barang impor atau kebutuhan sehari-hari yang berbasis Dolar AS.
+                </p>
+            </div>
+            
+            <div class="simulator-grid scroll-reveal">
+                <!-- Simulator Panel -->
+                <div class="simulator-panel glass-card">
+                    <h3>Simulasikan Harga Barang</h3>
+                    <p class="panel-desc">Pilih produk atau masukkan nominal Dolar, lalu bandingkan biayanya di berbagai era.</p>
+                    
+                    <div class="form-group">
+                        <label for="preset-product">Pilih Contoh Produk Impor:</label>
+                        <select id="preset-product" class="form-control">
+                            <option value="1000" selected>iPhone Baru / Laptop Menengah (US$ 1,000)</option>
+                            <option value="150">Biaya Langganan Server Perusahaan (US$ 150)</option>
+                            <option value="80">Harga Minyak Dunia per Barel (US$ 80)</option>
+                            <option value="15">Langganan Layanan Streaming Premium Setahun (US$ 15)</option>
+                            <option value="custom">-- Masukkan Nominal Custom Sendiri --</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group" id="custom-amount-group" style="display: none;">
+                        <label for="custom-usd">Masukkan Nominal Kustom (USD):</label>
+                        <div class="input-prefix-wrapper">
+                            <span class="input-prefix">US$</span>
+                            <input type="number" id="custom-usd" class="form-control" value="1000" min="1">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Bandingkan Berdasarkan Era:</label>
+                        <div class="era-select-grid">
+                            <div class="era-checkbox-card active" data-era="habibie">
+                                <span class="chk-title">Habibie (1999)</span>
+                                <span class="chk-val">Rp6.500</span>
+                            </div>
+                            <div class="era-checkbox-card" data-era="sby">
+                                <span class="chk-title">SBY (2008)</span>
+                                <span class="chk-val">Rp9.000</span>
+                            </div>
+                            <div class="era-checkbox-card" data-era="jokowi">
+                                <span class="chk-title">Jokowi (2020)</span>
+                                <span class="chk-val">Rp14.800</span>
+                            </div>
+                            <div class="era-checkbox-card active" data-era="prabowo">
+                                <span class="chk-title">Prabowo (2026)</span>
+                                <span class="chk-val text-red">Rp17.706</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button id="btn-calculate" class="btn btn-primary btn-block btn-glow">Simulasikan Dampak Kurs</button>
+                </div>
+                
+                <!-- Result Display Panel -->
+                <div class="simulator-result glass-card border-accent-glow">
+                    <h3>Hasil Perbandingan Biaya</h3>
+                    <div class="result-placeholder" id="result-placeholder">
+                        <div class="placeholder-icon"><i class="fa-solid fa-calculator animate-pulse"></i></div>
+                        <p>Silakan klik tombol di samping untuk memproses hasil perbandingan simulasi harga.</p>
+                    </div>
+                    
+                    <div class="result-details" id="result-details" style="display: none;">
+                        <div class="result-badge">US$ <span id="res-usd-val">1,000</span> setara dengan:</div>
+                        
+                        <div class="result-comparison-cards">
+                            <!-- Card Era A -->
+                            <div class="res-card res-card-a">
+                                <span class="res-era-badge" id="res-era-a-name">Era Habibie (Terkuat)</span>
+                                <div class="res-value" id="res-era-a-idr">Rp 6.500.000</div>
+                                <span class="res-kurs-lbl">Kurs: Rp6.500 per USD</span>
+                            </div>
+                            
+                            <!-- Arrow Indicator -->
+                            <div class="res-arrow"><i class="fa-solid fa-arrow-down-long"></i></div>
+                            
+                            <!-- Card Era B -->
+                            <div class="res-card res-card-b">
+                                <span class="res-era-badge" id="res-era-b-name">Era Prabowo (Terbaru 2026)</span>
+                                <div class="res-value text-red" id="res-era-b-idr">Rp 17.706.000</div>
+                                <span class="res-kurs-lbl">Kurs: Rp17.706 per USD</span>
+                            </div>
+                        </div>
+                        
+                        <div class="result-analysis-box">
+                            <h4><i class="fa-solid fa-triangle-exclamation"></i> Dampak Kenaikan Biaya</h4>
+                            <p>
+                                Terjadi lonjakan pengeluaran sebesar <strong class="text-red" id="res-selisih-persen">172.4%</strong> atau senilai <strong id="res-selisih-idr">Rp 11.206.000</strong> lebih mahal di era terbaru dibandingkan era pembanding akibat pelemahan nilai tukar Rupiah.
+                            </p>
+                            <p class="analysis-tip">
+                                *Hal ini menunjukkan betapa pentingnya stabilitas mata uang dalam menjaga keterjangkauan impor barang teknologi dan komoditas global bagi masyarakat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verified Media & Latest News Section -->
+    <section class="media-section" id="media">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-subtitle">REFERENSI UTAMA</span>
+                <h2 class="section-title">Tautan Media <span class="text-gradient">Valid & Terbaru</span></h2>
+                <p class="section-desc mx-auto">
+                    Kumpulan rujukan berita resmi dari media massa terpercaya di Indonesia mengenai rekor pelemahan Rupiah sepanjang tahun 2025-2026.
+                </p>
+            </div>
+            
+            <div class="media-grid scroll-reveal">
+                <!-- Media Card 1: CNBC Indonesia -->
+                <div class="media-card glass-card hover-glow">
+                    <div class="media-source cn-cnbc"><i class="fa-solid fa-globe"></i> CNBC Indonesia</div>
+                    <div class="media-body">
+                        <span class="media-date">24 Mei 2026</span>
+                        <h4>Rupiah Sentuh Rp17.706 per Dolar AS, Analis Soroti Faktor MSCI dan The Fed</h4>
+                        <p>
+                            Ulasan mendalam mengenai rontoknya rupiah di hadapan mata uang global akibat sentimen rebalancing indeks MSCI serta sinyal ketat kebijakan suku bunga The Fed.
+                        </p>
+                    </div>
+                    <div class="media-footer">
+                        <a href="https://www.cnbcindonesia.com" target="_blank" rel="noopener noreferrer" class="btn-text">Baca Selengkapnya <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Media Card 2: Kompas -->
+                <div class="media-card glass-card hover-glow">
+                    <div class="media-source cn-kompas"><i class="fa-solid fa-newspaper"></i> Kompas.com</div>
+                    <div class="media-body">
+                        <span class="media-date">22 Mei 2026</span>
+                        <h4>Rupiah Babak Belur terhadap Mata Uang Asia di Tengah Tekanan Devisa Swasta</h4>
+                        <p>
+                            Analisis regional mengenai posisi rupiah yang melemah terhadap won, yen, dan dolar Singapura akibat melonjaknya permintaan dolar untuk musim haji dan deviden.
+                        </p>
+                    </div>
+                    <div class="media-footer">
+                        <a href="https://www.kompas.com" target="_blank" rel="noopener noreferrer" class="btn-text">Baca Selengkapnya <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Media Card 3: Antara News -->
+                <div class="media-card glass-card hover-glow">
+                    <div class="media-source cn-antara"><i class="fa-solid fa-tower-broadcast"></i> Antara News</div>
+                    <div class="media-body">
+                        <span class="media-date">20 Mei 2026</span>
+                        <h4>KEM-PPKF 2027: Pemerintah Proyeksikan Rentang Kurs Rupiah Rp16.800–Rp17.500</h4>
+                        <p>
+                            Laporan resmi rapat paripurna DPR RI terkait asumsi makro RAPBN era Prabowo yang menargetkan kisaran stabilisasi rupiah di tahun mendatang.
+                        </p>
+                    </div>
+                    <div class="media-footer">
+                        <a href="https://www.antaranews.com" target="_blank" rel="noopener noreferrer" class="btn-text">Baca Selengkapnya <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Public Contribution Section -->
+    <section class="solusi-section">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-subtitle">AKSI NYATA KITA</span>
+                <h2 class="section-title">Bagaimana Kita Bisa <span class="text-gradient">Membantu Rupiah?</span></h2>
+                <p class="section-desc mx-auto">
+                    Pelemahan mata uang bukan sekadar urusan pemerintah dan bank sentral. Sebagai warga negara, langkah-langkah kecil berikut sangat berarti bagi ketahanan Rupiah.
+                </p>
+            </div>
+            
+            <div class="solusi-grid scroll-reveal">
+                <div class="solusi-card glass-card hover-glow">
+                    <div class="solusi-num">01</div>
+                    <h4>Gunakan Produk Dalam Negeri</h4>
+                    <p>Mengurangi pembelian barang impor akan menekan defisit perdagangan negara dan menstabilkan permintaan devisa asing.</p>
+                </div>
+                
+                <div class="solusi-card glass-card hover-glow">
+                    <div class="solusi-num">02</div>
+                    <h4>Berinvestasi di SBN & SBSN</h4>
+                    <p>Membeli Surat Berharga Negara (SBN) membantu pemerintah membiayai APBN secara mandiri tanpa tergantung utang valas asing.</p>
+                </div>
+                
+                <div class="solusi-card glass-card hover-glow">
+                    <div class="solusi-num">03</div>
+                    <h4>Hindari Spekulasi Valas</h4>
+                    <p>Menimbun Dolar AS demi keuntungan spekulasi jangka pendek justru memperparah kepanikan pasar dan melemahkan rupiah domestik.</p>
+                </div>
+                
+                <div class="solusi-card glass-card hover-glow">
+                    <div class="solusi-num">04</div>
+                    <h4>Dukung Pariwisata Lokal</h4>
+                    <p>Berlibur di destinasi wisata domestik menghemat devisa dan mendorong perputaran ekonomi bagi pelaku UMKM nusantara.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon"><i class="fa-solid fa-chart-line-down"></i></span>
+                        <span class="logo-text">Rupiah<span class="text-accent">Reformasi</span></span>
+                    </div>
+                    <p class="footer-desc">
+                        Sebuah platform edukasi publik mengenai sejarah moneter Indonesia. Didesain secara premium, responsif, dan interaktif untuk memberikan wawasan ekonomi yang mendalam bagi seluruh lapisan masyarakat.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Navigasi Cepat</h4>
+                    <ul>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#sejarah">Sejarah Era</a></li>
+                        <li><a href="#grafik">Data Interaktif</a></li>
+                        <li><a href="#faktor">Faktor Analisis</a></li>
+                        <li><a href="#simulator">Simulasi Kurs</a></li>
+                        <li><a href="#media">Referensi Media</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-creator">
+                    <h4>Pemilik & Kurator Portal</h4>
+                    <div class="creator-badge">
+                        <div class="creator-avatar">AF</div>
+                        <div class="creator-info">
+                            <span class="creator-name">Azalia Fitriani</span>
+                            <span class="creator-role">Pecinta Kajian Ekonomi Publik</span>
+                        </div>
+                    </div>
+                    <p class="creator-note">
+                        "Stabilitas Rupiah adalah cerminan dari ketangguhan dan kemandirian bangsa kita."
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 RupiahReformasi. Didesain dengan penuh dedikasi oleh <span class="creator-bottom-name">Azalia Fitriani</span>. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Logic Script -->
+    <script src="app.js"></script>
+</body>
+</html>
